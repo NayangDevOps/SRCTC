@@ -1,0 +1,24 @@
+CRITICAL - 2024-04-21 06:38:39 --> ErrorException: implode(): Invalid arguments passed
+in APPPATH\Controllers\TrainController.php on line 21.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'implode(): Invalid arguments passed', 'C:\\laragon\\www\\SRCTC\\app\\Controllers\\TrainController.php', 21, [...])
+ 2 APPPATH\Controllers\TrainController.php(21): implode(', ', null)
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\TrainController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TrainController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-21 06:41:50 --> ErrorException: implode(): Invalid arguments passed
+in APPPATH\Controllers\TrainController.php on line 21.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'implode(): Invalid arguments passed', 'C:\\laragon\\www\\SRCTC\\app\\Controllers\\TrainController.php', 21, [...])
+ 2 APPPATH\Controllers\TrainController.php(21): implode(', ', null)
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\TrainController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TrainController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-21 06:41:53 --> ErrorException: implode(): Invalid arguments passed
+in APPPATH\Controllers\TrainController.php on line 21.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'implode(): Invalid arguments passed', 'C:\\laragon\\www\\SRCTC\\app\\Controllers\\TrainController.php', 21, [...])
+ 2 APPPATH\Controllers\TrainController.php(21): implode(', ', null)
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\TrainController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TrainController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,245 @@
+CRITICAL - 2024-06-02 12:11:00 --> ErrorException: Illegal string offset 'train_name'
+in APPPATH\Controllers\TicketController.php on line 139.
+ 1 APPPATH\Controllers\TicketController.php(139): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'train_name\'', 'C:\\laragon\\www\\SRCTC\\app\\Controllers\\TicketController.php', 139, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\TicketController->ticket_list_ajax()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TicketController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-02 18:07:04 --> ParseError: syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+in APPPATH\Controllers\TicketController.php on line 164.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\SRCTC\\app\\Controllers\\TicketController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\TicketController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\TicketController')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\TicketController')
+ 5 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\TicketController', true)
+ 6 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-02 18:25:22 --> mysqli_sql_exception: Unknown column 'journey_date' in 'where clause' in C:\laragon\www\SRCTC\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\SRCTC\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\SRCTC\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\SRCTC\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\SRCTC\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\SRCTC\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\SRCTC\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\SRCTC\app\Controllers\TicketController.php(168): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\SRCTC\system\CodeIgniter.php(941): App\Controllers\TicketController->fetchContent('tab2')
+#8 C:\laragon\www\SRCTC\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TicketController))
+#9 C:\laragon\www\SRCTC\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\SRCTC\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-06-02 18:25:22 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'journey_date' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `srctc_ticket`
+WHERE `created_by` = :created_by:
+AND `journey_date` >= :journey_date:', [...], false)
+ 2 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\TicketController.php(168): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\TicketController->fetchContent('tab2')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TicketController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-02 18:25:22 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'journey_date' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `srctc_ticket`
+WHERE `created_by` = \'30\'
+AND `journey_date` >= \'2024-06-02 18:25:21\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `srctc_ticket`
+WHERE `created_by` = \'30\'
+AND `journey_date` >= \'2024-06-02 18:25:21\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `srctc_ticket`
+WHERE `created_by` = :created_by:
+AND `journey_date` >= :journey_date:', [...], false)
+ 4 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\TicketController.php(168): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\TicketController->fetchContent('tab2')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TicketController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-02 18:25:22 --> [Caused by] mysqli_sql_exception: Unknown column 'journey_date' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `srctc_ticket`
+WHERE `created_by` = \'30\'
+AND `journey_date` >= \'2024-06-02 18:25:21\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `srctc_ticket`
+WHERE `created_by` = \'30\'
+AND `journey_date` >= \'2024-06-02 18:25:21\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `srctc_ticket`
+WHERE `created_by` = \'30\'
+AND `journey_date` >= \'2024-06-02 18:25:21\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `srctc_ticket`
+WHERE `created_by` = :created_by:
+AND `journey_date` >= :journey_date:', [...], false)
+ 5 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\TicketController.php(168): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\TicketController->fetchContent('tab2')
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TicketController))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-02 18:25:25 --> mysqli_sql_exception: Unknown column 'journey_date' in 'where clause' in C:\laragon\www\SRCTC\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\SRCTC\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\SRCTC\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\SRCTC\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\SRCTC\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\SRCTC\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\SRCTC\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\SRCTC\app\Controllers\TicketController.php(168): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\SRCTC\system\CodeIgniter.php(941): App\Controllers\TicketController->fetchContent('tab2')
+#8 C:\laragon\www\SRCTC\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TicketController))
+#9 C:\laragon\www\SRCTC\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\SRCTC\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-06-02 18:25:25 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'journey_date' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `srctc_ticket`
+WHERE `created_by` = :created_by:
+AND `journey_date` >= :journey_date:', [...], false)
+ 2 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\TicketController.php(168): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\TicketController->fetchContent('tab2')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TicketController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-02 18:25:25 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'journey_date' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `srctc_ticket`
+WHERE `created_by` = \'30\'
+AND `journey_date` >= \'2024-06-02 18:25:25\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `srctc_ticket`
+WHERE `created_by` = \'30\'
+AND `journey_date` >= \'2024-06-02 18:25:25\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `srctc_ticket`
+WHERE `created_by` = :created_by:
+AND `journey_date` >= :journey_date:', [...], false)
+ 4 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\TicketController.php(168): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\TicketController->fetchContent('tab2')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TicketController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-02 18:25:25 --> [Caused by] mysqli_sql_exception: Unknown column 'journey_date' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `srctc_ticket`
+WHERE `created_by` = \'30\'
+AND `journey_date` >= \'2024-06-02 18:25:25\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `srctc_ticket`
+WHERE `created_by` = \'30\'
+AND `journey_date` >= \'2024-06-02 18:25:25\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `srctc_ticket`
+WHERE `created_by` = \'30\'
+AND `journey_date` >= \'2024-06-02 18:25:25\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `srctc_ticket`
+WHERE `created_by` = :created_by:
+AND `journey_date` >= :journey_date:', [...], false)
+ 5 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\TicketController.php(168): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\TicketController->fetchContent('tab2')
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TicketController))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-02 18:25:27 --> mysqli_sql_exception: Unknown column 'journey_date' in 'where clause' in C:\laragon\www\SRCTC\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\SRCTC\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\SRCTC\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\SRCTC\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\SRCTC\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\SRCTC\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\SRCTC\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\SRCTC\app\Controllers\TicketController.php(168): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\SRCTC\system\CodeIgniter.php(941): App\Controllers\TicketController->fetchContent('tab2')
+#8 C:\laragon\www\SRCTC\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TicketController))
+#9 C:\laragon\www\SRCTC\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\SRCTC\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-06-02 18:25:27 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'journey_date' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `srctc_ticket`
+WHERE `created_by` = :created_by:
+AND `journey_date` >= :journey_date:', [...], false)
+ 2 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\TicketController.php(168): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\TicketController->fetchContent('tab2')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TicketController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-02 18:25:27 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'journey_date' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `srctc_ticket`
+WHERE `created_by` = \'30\'
+AND `journey_date` >= \'2024-06-02 18:25:27\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `srctc_ticket`
+WHERE `created_by` = \'30\'
+AND `journey_date` >= \'2024-06-02 18:25:27\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `srctc_ticket`
+WHERE `created_by` = :created_by:
+AND `journey_date` >= :journey_date:', [...], false)
+ 4 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\TicketController.php(168): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\TicketController->fetchContent('tab2')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TicketController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-02 18:25:27 --> [Caused by] mysqli_sql_exception: Unknown column 'journey_date' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `srctc_ticket`
+WHERE `created_by` = \'30\'
+AND `journey_date` >= \'2024-06-02 18:25:27\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `srctc_ticket`
+WHERE `created_by` = \'30\'
+AND `journey_date` >= \'2024-06-02 18:25:27\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `srctc_ticket`
+WHERE `created_by` = \'30\'
+AND `journey_date` >= \'2024-06-02 18:25:27\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `srctc_ticket`
+WHERE `created_by` = :created_by:
+AND `journey_date` >= :journey_date:', [...], false)
+ 5 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\TicketController.php(168): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\TicketController->fetchContent('tab2')
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TicketController))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-02 18:42:12 --> ParseError: syntax error, unexpected '.'
+in APPPATH\Views\Ticket\ticket_content.php on line 7.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Ticket/ticket_content', [], true)
+ 3 APPPATH\Controllers\TicketController.php(176): view('Ticket/ticket_content', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\TicketController->fetchContent('tab1')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TicketController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

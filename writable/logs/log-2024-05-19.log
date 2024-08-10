@@ -1,0 +1,16 @@
+CRITICAL - 2024-05-19 18:06:04 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 970.
+ 1 SYSTEMPATH\BaseModel.php(970): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\TariffController.php(83): CodeIgniter\Model->update('7', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\TariffController->save_price()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TariffController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-19 18:10:15 --> ErrorException: A non-numeric value encountered
+in APPPATH\Controllers\TariffController.php on line 39.
+ 1 APPPATH\Controllers\TariffController.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'C:\\laragon\\www\\SRCTC\\app\\Controllers\\TariffController.php', 39, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\TariffController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TariffController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

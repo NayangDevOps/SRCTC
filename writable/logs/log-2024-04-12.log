@@ -1,0 +1,15 @@
+CRITICAL - 2024-04-12 16:13:08 --> ArgumentCountError: Too few arguments to function App\Controllers\TrainController::train_edit(), 0 passed in C:\laragon\www\SRCTC\system\CodeIgniter.php on line 941 and exactly 1 expected
+in APPPATH\Controllers\TrainController.php on line 54.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\TrainController->train_edit()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TrainController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-12 16:48:57 --> ParseError: syntax error, unexpected '}', expecting end of file
+in APPPATH\Views\header.php on line 169.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('header', [], true)
+ 3 APPPATH\Controllers\Home.php(107): view('header', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->dashboard()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

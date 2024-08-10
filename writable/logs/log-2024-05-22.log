@@ -1,0 +1,316 @@
+CRITICAL - 2024-05-22 06:21:28 --> ErrorException: date() expects at least 1 parameter, 0 given
+in APPPATH\Controllers\Home.php on line 221.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'date() expects at least 1 parameter, 0 given', 'C:\\laragon\\www\\SRCTC\\app\\Controllers\\Home.php', 221, [...])
+ 2 APPPATH\Controllers\Home.php(221): date()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->add_user()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-22 16:50:39 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\laragon\www\SRCTC\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\SRCTC\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT DATE_FOR...', 0)
+#1 C:\laragon\www\SRCTC\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE_FOR...')
+#2 C:\laragon\www\SRCTC\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE_FOR...')
+#3 C:\laragon\www\SRCTC\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT DATE_FOR...', Array, false)
+#4 C:\laragon\www\SRCTC\app\Models\UserModel.php(60): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\SRCTC\app\Controllers\Home.php(284): App\Models\UserModel->getDataBasedOnFilter('week')
+#6 C:\laragon\www\SRCTC\system\CodeIgniter.php(941): App\Controllers\Home->getUserData()
+#7 C:\laragon\www\SRCTC\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\laragon\www\SRCTC\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SRCTC\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-05-22 16:50:39 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT DATE_FORMAT(created_at, "%W") as day, COUNT(*) as count
+FROM `srctc_user_reg`
+WHERE `created_at` BETWEEN \'2024-05-20\' AND \'2024-05-26\'
+GROUP BY `day`
+ORDER BY FIELD(day, "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")', [], false)
+ 2 APPPATH\Models\UserModel.php(60): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(284): App\Models\UserModel->getDataBasedOnFilter('week')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->getUserData()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-22 16:50:39 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE_FORMAT(created_at, "%W") as day, COUNT(*) as count
+FROM `srctc_user_reg`
+WHERE `created_at` BETWEEN \'2024-05-20\' AND \'2024-05-26\'
+GROUP BY `day`
+ORDER BY FIELD(day, "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE_FORMAT(created_at, "%W") as day, COUNT(*) as count
+FROM `srctc_user_reg`
+WHERE `created_at` BETWEEN \'2024-05-20\' AND \'2024-05-26\'
+GROUP BY `day`
+ORDER BY FIELD(day, "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT DATE_FORMAT(created_at, "%W") as day, COUNT(*) as count
+FROM `srctc_user_reg`
+WHERE `created_at` BETWEEN \'2024-05-20\' AND \'2024-05-26\'
+GROUP BY `day`
+ORDER BY FIELD(day, "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")', [], false)
+ 4 APPPATH\Models\UserModel.php(60): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Home.php(284): App\Models\UserModel->getDataBasedOnFilter('week')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->getUserData()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-22 16:50:39 --> [Caused by] mysqli_sql_exception: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT DATE_FORMAT(created_at, "%W") as day, COUNT(*) as count
+FROM `srctc_user_reg`
+WHERE `created_at` BETWEEN \'2024-05-20\' AND \'2024-05-26\'
+GROUP BY `day`
+ORDER BY FIELD(day, "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE_FORMAT(created_at, "%W") as day, COUNT(*) as count
+FROM `srctc_user_reg`
+WHERE `created_at` BETWEEN \'2024-05-20\' AND \'2024-05-26\'
+GROUP BY `day`
+ORDER BY FIELD(day, "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE_FORMAT(created_at, "%W") as day, COUNT(*) as count
+FROM `srctc_user_reg`
+WHERE `created_at` BETWEEN \'2024-05-20\' AND \'2024-05-26\'
+GROUP BY `day`
+ORDER BY FIELD(day, "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT DATE_FORMAT(created_at, "%W") as day, COUNT(*) as count
+FROM `srctc_user_reg`
+WHERE `created_at` BETWEEN \'2024-05-20\' AND \'2024-05-26\'
+GROUP BY `day`
+ORDER BY FIELD(day, "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")', [], false)
+ 5 APPPATH\Models\UserModel.php(60): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(284): App\Models\UserModel->getDataBasedOnFilter('week')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->getUserData()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-22 16:53:18 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\laragon\www\SRCTC\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\SRCTC\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT DATE_FOR...', 0)
+#1 C:\laragon\www\SRCTC\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE_FOR...')
+#2 C:\laragon\www\SRCTC\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE_FOR...')
+#3 C:\laragon\www\SRCTC\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT DATE_FOR...', Array, false)
+#4 C:\laragon\www\SRCTC\app\Models\UserModel.php(60): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\SRCTC\app\Controllers\Home.php(284): App\Models\UserModel->getDataBasedOnFilter('week')
+#6 C:\laragon\www\SRCTC\system\CodeIgniter.php(941): App\Controllers\Home->getUserData()
+#7 C:\laragon\www\SRCTC\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\laragon\www\SRCTC\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SRCTC\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-05-22 16:53:18 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT DATE_FORMAT(created_at, "%W") as day, COUNT(*) as count
+FROM `srctc_user_reg`
+WHERE `created_at` BETWEEN \'2024-05-20\' AND \'2024-05-26\'
+GROUP BY `day`
+ORDER BY FIELD(day, "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")', [], false)
+ 2 APPPATH\Models\UserModel.php(60): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(284): App\Models\UserModel->getDataBasedOnFilter('week')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->getUserData()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-22 16:53:18 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE_FORMAT(created_at, "%W") as day, COUNT(*) as count
+FROM `srctc_user_reg`
+WHERE `created_at` BETWEEN \'2024-05-20\' AND \'2024-05-26\'
+GROUP BY `day`
+ORDER BY FIELD(day, "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE_FORMAT(created_at, "%W") as day, COUNT(*) as count
+FROM `srctc_user_reg`
+WHERE `created_at` BETWEEN \'2024-05-20\' AND \'2024-05-26\'
+GROUP BY `day`
+ORDER BY FIELD(day, "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT DATE_FORMAT(created_at, "%W") as day, COUNT(*) as count
+FROM `srctc_user_reg`
+WHERE `created_at` BETWEEN \'2024-05-20\' AND \'2024-05-26\'
+GROUP BY `day`
+ORDER BY FIELD(day, "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")', [], false)
+ 4 APPPATH\Models\UserModel.php(60): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Home.php(284): App\Models\UserModel->getDataBasedOnFilter('week')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->getUserData()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-22 16:53:18 --> [Caused by] mysqli_sql_exception: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT DATE_FORMAT(created_at, "%W") as day, COUNT(*) as count
+FROM `srctc_user_reg`
+WHERE `created_at` BETWEEN \'2024-05-20\' AND \'2024-05-26\'
+GROUP BY `day`
+ORDER BY FIELD(day, "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE_FORMAT(created_at, "%W") as day, COUNT(*) as count
+FROM `srctc_user_reg`
+WHERE `created_at` BETWEEN \'2024-05-20\' AND \'2024-05-26\'
+GROUP BY `day`
+ORDER BY FIELD(day, "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE_FORMAT(created_at, "%W") as day, COUNT(*) as count
+FROM `srctc_user_reg`
+WHERE `created_at` BETWEEN \'2024-05-20\' AND \'2024-05-26\'
+GROUP BY `day`
+ORDER BY FIELD(day, "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT DATE_FORMAT(created_at, "%W") as day, COUNT(*) as count
+FROM `srctc_user_reg`
+WHERE `created_at` BETWEEN \'2024-05-20\' AND \'2024-05-26\'
+GROUP BY `day`
+ORDER BY FIELD(day, "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")', [], false)
+ 5 APPPATH\Models\UserModel.php(60): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(284): App\Models\UserModel->getDataBasedOnFilter('week')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->getUserData()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-22 16:54:55 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\laragon\www\SRCTC\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\SRCTC\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT DATE_FOR...', 0)
+#1 C:\laragon\www\SRCTC\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE_FOR...')
+#2 C:\laragon\www\SRCTC\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE_FOR...')
+#3 C:\laragon\www\SRCTC\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT DATE_FOR...', Array, false)
+#4 C:\laragon\www\SRCTC\app\Models\UserModel.php(60): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\SRCTC\app\Controllers\Home.php(284): App\Models\UserModel->getDataBasedOnFilter('week')
+#6 C:\laragon\www\SRCTC\system\CodeIgniter.php(941): App\Controllers\Home->getUserData()
+#7 C:\laragon\www\SRCTC\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\laragon\www\SRCTC\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SRCTC\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-05-22 16:54:55 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT DATE_FORMAT(created_at, "%W") as day, COUNT(*) as count
+FROM `srctc_user_reg`
+WHERE `created_at` BETWEEN \'2024-05-20\' AND \'2024-05-26\'
+GROUP BY `day`
+ORDER BY FIELD(day, "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")', [], false)
+ 2 APPPATH\Models\UserModel.php(60): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(284): App\Models\UserModel->getDataBasedOnFilter('week')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->getUserData()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-22 16:54:55 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE_FORMAT(created_at, "%W") as day, COUNT(*) as count
+FROM `srctc_user_reg`
+WHERE `created_at` BETWEEN \'2024-05-20\' AND \'2024-05-26\'
+GROUP BY `day`
+ORDER BY FIELD(day, "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE_FORMAT(created_at, "%W") as day, COUNT(*) as count
+FROM `srctc_user_reg`
+WHERE `created_at` BETWEEN \'2024-05-20\' AND \'2024-05-26\'
+GROUP BY `day`
+ORDER BY FIELD(day, "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT DATE_FORMAT(created_at, "%W") as day, COUNT(*) as count
+FROM `srctc_user_reg`
+WHERE `created_at` BETWEEN \'2024-05-20\' AND \'2024-05-26\'
+GROUP BY `day`
+ORDER BY FIELD(day, "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")', [], false)
+ 4 APPPATH\Models\UserModel.php(60): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Home.php(284): App\Models\UserModel->getDataBasedOnFilter('week')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->getUserData()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-22 16:54:55 --> [Caused by] mysqli_sql_exception: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT DATE_FORMAT(created_at, "%W") as day, COUNT(*) as count
+FROM `srctc_user_reg`
+WHERE `created_at` BETWEEN \'2024-05-20\' AND \'2024-05-26\'
+GROUP BY `day`
+ORDER BY FIELD(day, "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE_FORMAT(created_at, "%W") as day, COUNT(*) as count
+FROM `srctc_user_reg`
+WHERE `created_at` BETWEEN \'2024-05-20\' AND \'2024-05-26\'
+GROUP BY `day`
+ORDER BY FIELD(day, "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE_FORMAT(created_at, "%W") as day, COUNT(*) as count
+FROM `srctc_user_reg`
+WHERE `created_at` BETWEEN \'2024-05-20\' AND \'2024-05-26\'
+GROUP BY `day`
+ORDER BY FIELD(day, "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT DATE_FORMAT(created_at, "%W") as day, COUNT(*) as count
+FROM `srctc_user_reg`
+WHERE `created_at` BETWEEN \'2024-05-20\' AND \'2024-05-26\'
+GROUP BY `day`
+ORDER BY FIELD(day, "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")', [], false)
+ 5 APPPATH\Models\UserModel.php(60): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(284): App\Models\UserModel->getDataBasedOnFilter('week')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->getUserData()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-22 16:55:01 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\laragon\www\SRCTC\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\SRCTC\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT DATE_FOR...', 0)
+#1 C:\laragon\www\SRCTC\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE_FOR...')
+#2 C:\laragon\www\SRCTC\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE_FOR...')
+#3 C:\laragon\www\SRCTC\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT DATE_FOR...', Array, false)
+#4 C:\laragon\www\SRCTC\app\Models\UserModel.php(60): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\SRCTC\app\Controllers\Home.php(284): App\Models\UserModel->getDataBasedOnFilter('week')
+#6 C:\laragon\www\SRCTC\system\CodeIgniter.php(941): App\Controllers\Home->getUserData()
+#7 C:\laragon\www\SRCTC\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\laragon\www\SRCTC\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SRCTC\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-05-22 16:55:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT DATE_FORMAT(created_at, "%W") as day, COUNT(*) as count
+FROM `srctc_user_reg`
+WHERE `created_at` BETWEEN \'2024-05-20\' AND \'2024-05-26\'
+GROUP BY `day`
+ORDER BY FIELD(day, "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")', [], false)
+ 2 APPPATH\Models\UserModel.php(60): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(284): App\Models\UserModel->getDataBasedOnFilter('week')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->getUserData()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-22 16:55:01 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE_FORMAT(created_at, "%W") as day, COUNT(*) as count
+FROM `srctc_user_reg`
+WHERE `created_at` BETWEEN \'2024-05-20\' AND \'2024-05-26\'
+GROUP BY `day`
+ORDER BY FIELD(day, "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE_FORMAT(created_at, "%W") as day, COUNT(*) as count
+FROM `srctc_user_reg`
+WHERE `created_at` BETWEEN \'2024-05-20\' AND \'2024-05-26\'
+GROUP BY `day`
+ORDER BY FIELD(day, "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT DATE_FORMAT(created_at, "%W") as day, COUNT(*) as count
+FROM `srctc_user_reg`
+WHERE `created_at` BETWEEN \'2024-05-20\' AND \'2024-05-26\'
+GROUP BY `day`
+ORDER BY FIELD(day, "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")', [], false)
+ 4 APPPATH\Models\UserModel.php(60): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Home.php(284): App\Models\UserModel->getDataBasedOnFilter('week')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->getUserData()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-22 16:55:01 --> [Caused by] mysqli_sql_exception: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT DATE_FORMAT(created_at, "%W") as day, COUNT(*) as count
+FROM `srctc_user_reg`
+WHERE `created_at` BETWEEN \'2024-05-20\' AND \'2024-05-26\'
+GROUP BY `day`
+ORDER BY FIELD(day, "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE_FORMAT(created_at, "%W") as day, COUNT(*) as count
+FROM `srctc_user_reg`
+WHERE `created_at` BETWEEN \'2024-05-20\' AND \'2024-05-26\'
+GROUP BY `day`
+ORDER BY FIELD(day, "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE_FORMAT(created_at, "%W") as day, COUNT(*) as count
+FROM `srctc_user_reg`
+WHERE `created_at` BETWEEN \'2024-05-20\' AND \'2024-05-26\'
+GROUP BY `day`
+ORDER BY FIELD(day, "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT DATE_FORMAT(created_at, "%W") as day, COUNT(*) as count
+FROM `srctc_user_reg`
+WHERE `created_at` BETWEEN \'2024-05-20\' AND \'2024-05-26\'
+GROUP BY `day`
+ORDER BY FIELD(day, "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")', [], false)
+ 5 APPPATH\Models\UserModel.php(60): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(284): App\Models\UserModel->getDataBasedOnFilter('week')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->getUserData()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

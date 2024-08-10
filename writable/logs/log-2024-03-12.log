@@ -1,0 +1,36 @@
+CRITICAL - 2024-03-12 16:46:21 --> Error: Call to a member function isValid() on null
+in APPPATH\Controllers\Home.php on line 123.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->user_profile('1')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-12 16:56:05 --> Error: Call to a member function isValid() on null
+in APPPATH\Controllers\Home.php on line 131.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->user_profile('1')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-12 17:10:54 --> Error: Call to a member function isValid() on null
+in APPPATH\Controllers\Home.php on line 134.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->user_profile('1')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-12 17:15:12 --> Error: Call to a member function isValid() on null
+in APPPATH\Controllers\Home.php on line 134.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->user_profile('1')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-12 17:15:24 --> Error: Call to a member function getRandomName() on null
+in APPPATH\Controllers\Home.php on line 135.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->user_profile('1')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-12 17:16:19 --> Error: Call to a member function getRandomName() on null
+in APPPATH\Controllers\Home.php on line 133.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->user_profile('1')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

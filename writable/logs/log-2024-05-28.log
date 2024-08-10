@@ -1,0 +1,29 @@
+CRITICAL - 2024-05-28 19:47:56 --> ErrorException: Use of undefined constant results - assumed 'results' (this will throw an Error in a future version of PHP)
+in APPPATH\Views\Ticket\book_ticket.php on line 58.
+ 1 APPPATH\Views\Ticket\book_ticket.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefined constant results - assumed \'results\' (this will throw an Error in a future version of PHP)', 'C:\\laragon\\www\\SRCTC\\app\\Views\\Ticket\\book_ticket.php', 58, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\SRCTC\\app\\Views\\Ticket\\book_ticket.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Ticket/book_ticket', [], true)
+ 5 APPPATH\Controllers\TicketController.php(67): view('Ticket/book_ticket', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\TicketController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TicketController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-28 20:11:58 --> ParseError: syntax error, unexpected end of file
+in APPPATH\Views\Ticket\book_ticket.php on line 217.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Ticket/book_ticket', [], true)
+ 3 APPPATH\Controllers\TicketController.php(70): view('Ticket/book_ticket', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\TicketController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TicketController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-28 20:12:28 --> ParseError: syntax error, unexpected end of file
+in APPPATH\Views\Ticket\book_ticket.php on line 217.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Ticket/book_ticket', [], true)
+ 3 APPPATH\Controllers\TicketController.php(70): view('Ticket/book_ticket', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\TicketController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TicketController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

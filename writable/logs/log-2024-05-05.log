@@ -1,0 +1,6 @@
+CRITICAL - 2024-05-05 13:00:09 --> Error: Call to a member function getUserData() on null
+in APPPATH\Controllers\StationController.php on line 90.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\StationController->edit_station('1')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

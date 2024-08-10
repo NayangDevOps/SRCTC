@@ -1,0 +1,18 @@
+CRITICAL - 2024-04-01 17:02:58 --> ParseError: syntax error, unexpected ')'
+in APPPATH\Views\signup_page.php on line 2.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('signup_page', [], true)
+ 3 APPPATH\Controllers\Home.php(93): view('signup_page')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->sign_up()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-01 17:06:40 --> ParseError: syntax error, unexpected ')'
+in APPPATH\Views\signup_page.php on line 5.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('signup_page', [], true)
+ 3 APPPATH\Controllers\Home.php(93): view('signup_page')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->sign_up()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

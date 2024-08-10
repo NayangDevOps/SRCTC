@@ -1,0 +1,152 @@
+#news-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+
+  .news-item {
+    position: relative;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .news-item h3 {
+    color: #333;
+    margin-top: 0;
+  }
+
+  .news-item p {
+    color: #666;
+  }
+
+  .news-item img {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+
+  .remove-button {
+    position: absolute;
+    top: 10px;
+    right: 35px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: red;
+    cursor: pointer;
+  }
+
+  .add-button {
+    position: absolute;
+    top: 10px;
+    right: 35px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: green;
+    cursor: pointer;
+  }
+
+  .emoji-selector {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+  }
+
+  .emoji-selector button {
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .emoji-selector button:focus {
+    outline: none;
+  }
+
+  .news-item {
+  position: relative;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.emoji-count-container {
+position: absolute;
+bottom: 10px;
+right: 10px;
+}
+
+.emoji-count {
+display: inline-block;
+margin-left: 5px;
+}
+.custom-span {
+  display: inline;
+  margin-left: -20px;
+  font-weight: 600;
+  font-size: 13px;
+}
+.card-body.pb-0.custom-body {
+    background-color: #fff;
+    margin-bottom: 25px;
+}
+  .filter-container {
+    margin-bottom: 20px;
+  }
+  .filter-container label {
+    margin-right: 10px;
+  }
+  .chart-container {
+    max-width: 800px;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  .news-button {
+    margin-left: 852px;
+    margin-top: -85px;
+    width: 11%;
+    background-color: #2f2f8f;
+}
+.modal-header {
+  background-color: #2f308d;
+  color: white;
+}
+.form-control, .form-control-file {
+  border-radius: 0.25rem;
+  box-shadow: none;
+  border-color: #ced4da;
+}
+.modal-footer .btn {
+  width: 100px;
+}
+.modal-footer .btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+.modal-footer .btn-secondary {
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+.form-group.mb-4 {
+  margin-bottom: 1.5rem !important;
+}
+button.delete-button {
+  position: absolute;
+  top: 10px;
+  right: 8px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: red;
+  cursor: pointer;
+}

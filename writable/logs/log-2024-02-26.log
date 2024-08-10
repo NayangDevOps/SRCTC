@@ -1,0 +1,268 @@
+ERROR - 2024-02-26 15:32:03 --> mysqli_sql_exception: No database selected in C:\laragon\www\SRCTC\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\SRCTC\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\laragon\www\SRCTC\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\laragon\www\SRCTC\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\laragon\www\SRCTC\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\laragon\www\SRCTC\system\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\SRCTC\system\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('nayangondaliya1...', 'email', Array, NULL, 'email')
+#6 C:\laragon\www\SRCTC\system\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('email', 'email', 'nayangondaliya1...', Array, Array)
+#7 C:\laragon\www\SRCTC\system\Controller.php(152): CodeIgniter\Validation\Validation->run()
+#8 C:\laragon\www\SRCTC\app\Controllers\Home.php(32): CodeIgniter\Controller->validate(Array)
+#9 C:\laragon\www\SRCTC\system\CodeIgniter.php(941): App\Controllers\Home->sign_up()
+#10 C:\laragon\www\SRCTC\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#11 C:\laragon\www\SRCTC\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\SRCTC\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-02-26 15:32:03 --> CodeIgniter\Database\Exceptions\DatabaseException: No database selected
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `srctc_user_reg`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('nayangondaliya157@gmail.com', 'email', [...], null, 'email')
+ 4 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('email', 'email', 'nayangondaliya157@gmail.com', [...], [...])
+ 5 SYSTEMPATH\Controller.php(152): CodeIgniter\Validation\Validation->run()
+ 6 APPPATH\Controllers\Home.php(32): CodeIgniter\Controller->validate([...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->sign_up()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-26 15:32:03 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: No database selected
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `srctc_user_reg`
+WHERE `email` = \'nayangondaliya157@gmail.com\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `srctc_user_reg`
+WHERE `email` = \'nayangondaliya157@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `srctc_user_reg`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('nayangondaliya157@gmail.com', 'email', [...], null, 'email')
+ 6 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('email', 'email', 'nayangondaliya157@gmail.com', [...], [...])
+ 7 SYSTEMPATH\Controller.php(152): CodeIgniter\Validation\Validation->run()
+ 8 APPPATH\Controllers\Home.php(32): CodeIgniter\Controller->validate([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->sign_up()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-26 15:32:03 --> [Caused by] mysqli_sql_exception: No database selected
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT 1
+FROM `srctc_user_reg`
+WHERE `email` = \'nayangondaliya157@gmail.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `srctc_user_reg`
+WHERE `email` = \'nayangondaliya157@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `srctc_user_reg`
+WHERE `email` = \'nayangondaliya157@gmail.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `srctc_user_reg`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('nayangondaliya157@gmail.com', 'email', [...], null, 'email')
+ 7 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('email', 'email', 'nayangondaliya157@gmail.com', [...], [...])
+ 8 SYSTEMPATH\Controller.php(152): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\Home.php(32): CodeIgniter\Controller->validate([...])
+10 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->sign_up()
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-26 15:32:31 --> mysqli_sql_exception: No database selected in C:\laragon\www\SRCTC\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\SRCTC\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `sr...', 0)
+#1 C:\laragon\www\SRCTC\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sr...')
+#2 C:\laragon\www\SRCTC\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sr...')
+#3 C:\laragon\www\SRCTC\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sr...', Array, false)
+#4 C:\laragon\www\SRCTC\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\SRCTC\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\SRCTC\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\SRCTC\app\Controllers\Home.php(40): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\SRCTC\system\CodeIgniter.php(941): App\Controllers\Home->sign_up()
+#9 C:\laragon\www\SRCTC\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\laragon\www\SRCTC\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\SRCTC\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-02-26 15:32:31 --> CodeIgniter\Database\Exceptions\DatabaseException: No database selected
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `srctc_user_reg` (`first_name`, `last_name`, `email`, `mobile_no`, `password`) VALUES (:first_name:, :last_name:, :email:, :mobile_no:, :password:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Home.php(40): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->sign_up()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-26 15:32:31 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: No database selected
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `srctc_user_reg` (`first_name`, `last_name`, `email`, `mobile_no`, `password`) VALUES (\'Nayan\', \'Gondaliya\', \'nayangondaliya157@gmail.com\', \'7572951997\', \'$2y$10$UPkNP6CraqV8SiS/arjqPullWR1l3fQdecugF8mwhxR2zAc.MymRG\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `srctc_user_reg` (`first_name`, `last_name`, `email`, `mobile_no`, `password`) VALUES (\'Nayan\', \'Gondaliya\', \'nayangondaliya157@gmail.com\', \'7572951997\', \'$2y$10$UPkNP6CraqV8SiS/arjqPullWR1l3fQdecugF8mwhxR2zAc.MymRG\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `srctc_user_reg` (`first_name`, `last_name`, `email`, `mobile_no`, `password`) VALUES (:first_name:, :last_name:, :email:, :mobile_no:, :password:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Home.php(40): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->sign_up()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-26 15:32:31 --> [Caused by] mysqli_sql_exception: No database selected
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `srctc_user_reg` (`first_name`, `last_name`, `email`, `mobile_no`, `password`) VALUES (\'Nayan\', \'Gondaliya\', \'nayangondaliya157@gmail.com\', \'7572951997\', \'$2y$10$UPkNP6CraqV8SiS/arjqPullWR1l3fQdecugF8mwhxR2zAc.MymRG\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `srctc_user_reg` (`first_name`, `last_name`, `email`, `mobile_no`, `password`) VALUES (\'Nayan\', \'Gondaliya\', \'nayangondaliya157@gmail.com\', \'7572951997\', \'$2y$10$UPkNP6CraqV8SiS/arjqPullWR1l3fQdecugF8mwhxR2zAc.MymRG\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `srctc_user_reg` (`first_name`, `last_name`, `email`, `mobile_no`, `password`) VALUES (\'Nayan\', \'Gondaliya\', \'nayangondaliya157@gmail.com\', \'7572951997\', \'$2y$10$UPkNP6CraqV8SiS/arjqPullWR1l3fQdecugF8mwhxR2zAc.MymRG\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `srctc_user_reg` (`first_name`, `last_name`, `email`, `mobile_no`, `password`) VALUES (:first_name:, :last_name:, :email:, :mobile_no:, :password:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Home.php(40): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->sign_up()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-26 15:32:49 --> mysqli_sql_exception: No database selected in C:\laragon\www\SRCTC\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\SRCTC\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `sr...', 0)
+#1 C:\laragon\www\SRCTC\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sr...')
+#2 C:\laragon\www\SRCTC\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sr...')
+#3 C:\laragon\www\SRCTC\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sr...', Array, false)
+#4 C:\laragon\www\SRCTC\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\SRCTC\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\SRCTC\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\SRCTC\app\Controllers\Home.php(40): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\SRCTC\system\CodeIgniter.php(941): App\Controllers\Home->sign_up()
+#9 C:\laragon\www\SRCTC\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\laragon\www\SRCTC\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\SRCTC\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-02-26 15:32:49 --> CodeIgniter\Database\Exceptions\DatabaseException: No database selected
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `srctc_user_reg` (`first_name`, `last_name`, `email`, `mobile_no`, `password`) VALUES (:first_name:, :last_name:, :email:, :mobile_no:, :password:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Home.php(40): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->sign_up()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-26 15:32:49 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: No database selected
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `srctc_user_reg` (`first_name`, `last_name`, `email`, `mobile_no`, `password`) VALUES (\'Nayan\', \'Gondaliya\', \'nayangondaliya157@gmail.com\', \'7572951997\', \'$2y$10$VFh1DlsR4SXoYNvi1YScJOKEWxxmPgO4YFnLrv80r/Vys2W1LCduW\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `srctc_user_reg` (`first_name`, `last_name`, `email`, `mobile_no`, `password`) VALUES (\'Nayan\', \'Gondaliya\', \'nayangondaliya157@gmail.com\', \'7572951997\', \'$2y$10$VFh1DlsR4SXoYNvi1YScJOKEWxxmPgO4YFnLrv80r/Vys2W1LCduW\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `srctc_user_reg` (`first_name`, `last_name`, `email`, `mobile_no`, `password`) VALUES (:first_name:, :last_name:, :email:, :mobile_no:, :password:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Home.php(40): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->sign_up()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-26 15:32:49 --> [Caused by] mysqli_sql_exception: No database selected
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `srctc_user_reg` (`first_name`, `last_name`, `email`, `mobile_no`, `password`) VALUES (\'Nayan\', \'Gondaliya\', \'nayangondaliya157@gmail.com\', \'7572951997\', \'$2y$10$VFh1DlsR4SXoYNvi1YScJOKEWxxmPgO4YFnLrv80r/Vys2W1LCduW\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `srctc_user_reg` (`first_name`, `last_name`, `email`, `mobile_no`, `password`) VALUES (\'Nayan\', \'Gondaliya\', \'nayangondaliya157@gmail.com\', \'7572951997\', \'$2y$10$VFh1DlsR4SXoYNvi1YScJOKEWxxmPgO4YFnLrv80r/Vys2W1LCduW\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `srctc_user_reg` (`first_name`, `last_name`, `email`, `mobile_no`, `password`) VALUES (\'Nayan\', \'Gondaliya\', \'nayangondaliya157@gmail.com\', \'7572951997\', \'$2y$10$VFh1DlsR4SXoYNvi1YScJOKEWxxmPgO4YFnLrv80r/Vys2W1LCduW\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `srctc_user_reg` (`first_name`, `last_name`, `email`, `mobile_no`, `password`) VALUES (:first_name:, :last_name:, :email:, :mobile_no:, :password:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Home.php(40): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->sign_up()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-26 15:40:51 --> mysqli_sql_exception: No database selected in C:\laragon\www\SRCTC\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\SRCTC\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\laragon\www\SRCTC\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\laragon\www\SRCTC\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\laragon\www\SRCTC\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\laragon\www\SRCTC\system\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\SRCTC\system\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('nayangondaliya1...', 'email', Array, NULL, 'email')
+#6 C:\laragon\www\SRCTC\system\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('email', 'email', 'nayangondaliya1...', Array, Array)
+#7 C:\laragon\www\SRCTC\system\Controller.php(152): CodeIgniter\Validation\Validation->run()
+#8 C:\laragon\www\SRCTC\app\Controllers\Home.php(32): CodeIgniter\Controller->validate(Array)
+#9 C:\laragon\www\SRCTC\system\CodeIgniter.php(941): App\Controllers\Home->sign_up()
+#10 C:\laragon\www\SRCTC\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#11 C:\laragon\www\SRCTC\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\SRCTC\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-02-26 15:40:51 --> CodeIgniter\Database\Exceptions\DatabaseException: No database selected
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `srctc_user_reg`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('nayangondaliya157@gmail.com', 'email', [...], null, 'email')
+ 4 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('email', 'email', 'nayangondaliya157@gmail.com', [...], [...])
+ 5 SYSTEMPATH\Controller.php(152): CodeIgniter\Validation\Validation->run()
+ 6 APPPATH\Controllers\Home.php(32): CodeIgniter\Controller->validate([...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->sign_up()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-26 15:40:51 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: No database selected
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `srctc_user_reg`
+WHERE `email` = \'nayangondaliya157@gmail.com\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `srctc_user_reg`
+WHERE `email` = \'nayangondaliya157@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `srctc_user_reg`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('nayangondaliya157@gmail.com', 'email', [...], null, 'email')
+ 6 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('email', 'email', 'nayangondaliya157@gmail.com', [...], [...])
+ 7 SYSTEMPATH\Controller.php(152): CodeIgniter\Validation\Validation->run()
+ 8 APPPATH\Controllers\Home.php(32): CodeIgniter\Controller->validate([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->sign_up()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-26 15:40:51 --> [Caused by] mysqli_sql_exception: No database selected
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT 1
+FROM `srctc_user_reg`
+WHERE `email` = \'nayangondaliya157@gmail.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `srctc_user_reg`
+WHERE `email` = \'nayangondaliya157@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `srctc_user_reg`
+WHERE `email` = \'nayangondaliya157@gmail.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `srctc_user_reg`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('nayangondaliya157@gmail.com', 'email', [...], null, 'email')
+ 7 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('email', 'email', 'nayangondaliya157@gmail.com', [...], [...])
+ 8 SYSTEMPATH\Controller.php(152): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\Home.php(32): CodeIgniter\Controller->validate([...])
+10 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->sign_up()
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

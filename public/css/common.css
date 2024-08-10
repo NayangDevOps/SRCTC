@@ -1,0 +1,103 @@
+/* In your CSS file */
+#user_table_wrapper {
+    background-color: #ffffff; /* Light blue background */
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 26px;
+    overflow-x: auto;
+}
+#user_table {
+    width: 100%;
+}
+#user_table_wrapper{
+    overflow-y: auto;
+    overflow-x: auto;
+}
+#user_table_wrapper::-webkit-scrollbar{
+    width: 12px;
+}
+#user_table_wrapper::-webkit-scrollbar-track{
+    background-color: white;
+    border-radius: 10px;
+}
+#user_table_wrapper::-webkit-scrollbar-thumb{
+    background-color: #f3dee8;
+    border-radius: 10px;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    color: #fff;
+    background-color: #007bff; /* Blue button color */
+    border: none;
+    border-radius: 3px;
+    padding: 6px 12px;
+}
+.test .card-body{
+    background-color: white;
+    border-radius: 30px;
+}
+th {
+    background-color: #2f308d;
+    color: white;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+    background-color: #0056b3; /* Darker shade for current page */
+}
+
+
+.dataTables_wrapper .dataTables_filter input[type="search"] {
+    border: 1px solid #000000; /* Blue border for search input */
+    margin-bottom: 20px;
+}
+
+.dataTables_wrapper .dataTables_filter input[type="search"] {
+    border: 1px solid #007bff; /* Blue border for search input */
+}
+
+.dataTables_wrapper .dataTables_filter input[type="search"]:focus {
+    border-color: #0056b3; /* Darker border color on focus */
+}
+
+.dataTables_wrapper .dataTables_info {
+    color: #007bff; /* Blue color for info text */
+}
+input.trainCodeInput {
+    background-color: #eee;cursor: not-allowed;
+}
+.disabled {
+    background-color: #eee;cursor: not-allowed;
+}
+#train_table_wrapper {
+    background-color: #ffffff; /* Light blue background */
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 26px;
+    overflow-x: auto;
+}
+#train_table {
+    width: 100%;
+}
+#train_table_wrapper{
+    overflow-y: auto;
+    overflow-x: auto;
+}
+#train_table_wrapper::-webkit-scrollbar{
+    width: 12px;
+}
+#train_table_wrapper::-webkit-scrollbar-track{
+    background-color: white;
+    border-radius: 10px;
+}
+#train_table_wrapper::-webkit-scrollbar-thumb{
+    background-color: #f3dee8;
+    border-radius: 10px;
+}
+#train_table{
+    width: 950px !important;
+}

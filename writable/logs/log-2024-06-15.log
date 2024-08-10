@@ -1,0 +1,45 @@
+CRITICAL - 2024-06-15 16:10:42 --> TypeError: Argument 2 passed to view() must be of the type array, null given, called in C:\laragon\www\SRCTC\app\Controllers\TicketController.php on line 283
+in SYSTEMPATH\Common.php on line 1166.
+ 1 APPPATH\Controllers\TicketController.php(283): view('Ticket/edit_ticket', null)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\TicketController->edit_ticket('1')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TicketController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-15 17:18:24 --> ErrorException: implode(): Invalid arguments passed
+in APPPATH\Controllers\TrainController.php on line 21.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'implode(): Invalid arguments passed', 'C:\\laragon\\www\\SRCTC\\app\\Controllers\\TrainController.php', 21, [...])
+ 2 APPPATH\Controllers\TrainController.php(21): implode(', ', null)
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\TrainController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TrainController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-15 17:20:38 --> Error: Function name must be a string
+in APPPATH\Views\Ticket\edit_ticket.php on line 16.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Ticket/edit_ticket', [], true)
+ 4 APPPATH\Controllers\TicketController.php(256): view('Ticket/edit_ticket', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\TicketController->edit_ticket('1')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TicketController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-15 17:20:42 --> Error: Function name must be a string
+in APPPATH\Views\Ticket\edit_ticket.php on line 16.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Ticket/edit_ticket', [], true)
+ 4 APPPATH\Controllers\TicketController.php(256): view('Ticket/edit_ticket', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\TicketController->edit_ticket('1')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TicketController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-15 17:20:49 --> Error: Function name must be a string
+in APPPATH\Views\Ticket\edit_ticket.php on line 16.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Ticket/edit_ticket', [], true)
+ 4 APPPATH\Controllers\TicketController.php(256): view('Ticket/edit_ticket', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\TicketController->edit_ticket('1')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TicketController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,9 @@
+CRITICAL - 2024-03-03 10:03:25 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "user_profile.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user_profile.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user_profile', [], true)
+ 3 APPPATH\Controllers\Home.php(116): view('user_profile')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->user_profile('3')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

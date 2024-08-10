@@ -1,0 +1,319 @@
+CRITICAL - 2024-03-02 11:32:22 --> Error: Call to a member function getUserById() on null
+in APPPATH\Controllers\Home.php on line 98.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->dashboard()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 11:32:26 --> Error: Call to a member function getUserById() on null
+in APPPATH\Controllers\Home.php on line 98.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->dashboard()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 11:32:31 --> Error: Call to a member function getUserById() on null
+in APPPATH\Controllers\Home.php on line 98.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->dashboard()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 11:33:51 --> Error: Call to a member function getUserById() on null
+in APPPATH\Controllers\Home.php on line 98.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->dashboard()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 13:08:48 --> Error: Function name must be a string
+in APPPATH\Filters\AuthFilter.php on line 29.
+ 1 SYSTEMPATH\Filters\Filters.php(184): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('dashboard', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 13:08:53 --> Error: Function name must be a string
+in APPPATH\Filters\AuthFilter.php on line 29.
+ 1 SYSTEMPATH\Filters\Filters.php(184): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('dashboard', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 13:10:56 --> ParseError: syntax error, unexpected '/'
+in APPPATH\Config\Filters.php on line 31.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\SRCTC\\app\\Config\\Filters.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('Config\\Filters')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('Config\\Filters')
+ 4 [internal function]: spl_autoload_call('Config\\Filters')
+ 5 SYSTEMPATH\Config\Factories.php(280): class_exists('Config\\Filters')
+ 6 SYSTEMPATH\Config\Factories.php(199): CodeIgniter\Config\Factories::locateClass([...], 'Config\\Filters')
+ 7 SYSTEMPATH\Config\Factories.php(158): CodeIgniter\Config\Factories::getDefinedInstance([...], 'Config\\Filters', [])
+ 8 SYSTEMPATH\Common.php(215): CodeIgniter\Config\Factories::__callStatic('config', [])
+ 9 SYSTEMPATH\Config\Services.php(291): config('Config\\Filters')
+10 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::filters(null, false)
+11 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('filters', [...])
+12 SYSTEMPATH\Config\Services.php(288): CodeIgniter\Config\BaseService::getSharedInstance('filters', null)
+13 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::filters()
+14 SYSTEMPATH\CodeIgniter.php(456): CodeIgniter\Config\BaseService::__callStatic('filters', [])
+15 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 13:13:04 --> Error: Function name must be a string
+in APPPATH\Filters\AuthFilter.php on line 29.
+ 1 SYSTEMPATH\Filters\Filters.php(184): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('dashboard', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 13:13:07 --> Error: Function name must be a string
+in APPPATH\Filters\AuthFilter.php on line 29.
+ 1 SYSTEMPATH\Filters\Filters.php(184): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('dashboard', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 13:20:56 --> Error: Function name must be a string
+in APPPATH\Filters\AuthFilter.php on line 29.
+ 1 SYSTEMPATH\Filters\Filters.php(184): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('dashboard', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 13:21:23 --> CodeIgniter\Filters\Exceptions\FilterException: "auth" filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 352.
+ 1 SYSTEMPATH\Filters\Filters.php(352): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('auth')
+ 2 SYSTEMPATH\CodeIgniter.php(467): CodeIgniter\Filters\Filters->enableFilter('auth', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 13:27:22 --> CodeIgniter\Filters\Exceptions\FilterException: "auth" filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 352.
+ 1 SYSTEMPATH\Filters\Filters.php(352): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('auth')
+ 2 SYSTEMPATH\CodeIgniter.php(467): CodeIgniter\Filters\Filters->enableFilter('auth', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 13:27:26 --> CodeIgniter\Filters\Exceptions\FilterException: "auth" filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 352.
+ 1 SYSTEMPATH\Filters\Filters.php(352): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('auth')
+ 2 SYSTEMPATH\CodeIgniter.php(467): CodeIgniter\Filters\Filters->enableFilter('auth', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 13:27:49 --> ParseError: syntax error, unexpected ';', expecting ']'
+in APPPATH\Config\Filters.php on line 69.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\SRCTC\\app\\Config\\Filters.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('Config\\Filters')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('Config\\Filters')
+ 4 [internal function]: spl_autoload_call('Config\\Filters')
+ 5 SYSTEMPATH\Config\Factories.php(280): class_exists('Config\\Filters')
+ 6 SYSTEMPATH\Config\Factories.php(199): CodeIgniter\Config\Factories::locateClass([...], 'Config\\Filters')
+ 7 SYSTEMPATH\Config\Factories.php(158): CodeIgniter\Config\Factories::getDefinedInstance([...], 'Config\\Filters', [])
+ 8 SYSTEMPATH\Common.php(215): CodeIgniter\Config\Factories::__callStatic('config', [])
+ 9 SYSTEMPATH\Config\Services.php(291): config('Config\\Filters')
+10 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::filters(null, false)
+11 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('filters', [...])
+12 SYSTEMPATH\Config\Services.php(288): CodeIgniter\Config\BaseService::getSharedInstance('filters', null)
+13 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::filters()
+14 SYSTEMPATH\CodeIgniter.php(456): CodeIgniter\Config\BaseService::__callStatic('filters', [])
+15 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 13:49:59 --> Error: Call to undefined method CodeIgniter\HTTP\IncomingRequest::get()
+in APPPATH\Controllers\Home.php on line 44.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 13:50:02 --> Error: Call to undefined method CodeIgniter\HTTP\IncomingRequest::get()
+in APPPATH\Controllers\Home.php on line 44.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 16:54:18 --> Error: Call to undefined function App\Controllers\get_session()
+in APPPATH\Controllers\Home.php on line 101.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->dashboard()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 17:11:45 --> Error: Call to undefined function App\Controllers\get_session_data()
+in APPPATH\Controllers\Home.php on line 90.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->dashboard()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 17:12:04 --> Error: Call to undefined function App\Controllers\get_session_data()
+in APPPATH\Controllers\Home.php on line 94.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->dashboard()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 17:13:43 --> Error: Call to undefined function App\Controllers\get_session_data()
+in APPPATH\Controllers\Home.php on line 94.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->dashboard()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 17:14:04 --> Error: Call to undefined function App\Controllers\get_session_data()
+in APPPATH\Controllers\Home.php on line 94.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->dashboard()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 17:18:09 --> ParseError: syntax error, unexpected '$header' (T_VARIABLE)
+in APPPATH\Controllers\Home.php on line 96.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\SRCTC\\app\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Home')
+ 5 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Home', true)
+ 6 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 17:19:53 --> ParseError: syntax error, unexpected '$header' (T_VARIABLE)
+in APPPATH\Controllers\Home.php on line 96.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\SRCTC\\app\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Home')
+ 5 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Home', true)
+ 6 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 17:21:26 --> Error: Call to undefined function App\Controllers\get_session_data()
+in APPPATH\Controllers\Home.php on line 90.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->dashboard()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 17:32:25 --> Error: Class 'UserModel' not found
+in APPPATH\Views\header.php on line 74.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('header', [], true)
+ 4 APPPATH\Controllers\Home.php(108): view('header', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 17:35:45 --> Error: Call to undefined function get_instance()
+in APPPATH\Views\header.php on line 74.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('header', [], true)
+ 4 APPPATH\Controllers\Home.php(108): view('header', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 17:40:36 --> Error: Using $this when not in object context
+in APPPATH\Models\UserModel.php on line 13.
+ 1 APPPATH\Views\header.php(78): App\Models\UserModel::getUserById('3')
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\SRCTC\\app\\Views\\header.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('header', [], true)
+ 5 APPPATH\Controllers\Home.php(108): view('header', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 17:41:05 --> Error: Using $this when not in object context
+in APPPATH\Models\UserModel.php on line 13.
+ 1 APPPATH\Controllers\Home.php(104): App\Models\UserModel::getUserById('3')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->dashboard()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 17:41:18 --> Error: Using $this when not in object context
+in APPPATH\Models\UserModel.php on line 13.
+ 1 APPPATH\Views\header.php(78): App\Models\UserModel::getUserById('3')
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\SRCTC\\app\\Views\\header.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('header', [], true)
+ 5 APPPATH\Controllers\Home.php(108): view('header', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 17:41:20 --> Error: Using $this when not in object context
+in APPPATH\Models\UserModel.php on line 13.
+ 1 APPPATH\Views\header.php(78): App\Models\UserModel::getUserById('3')
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\SRCTC\\app\\Views\\header.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('header', [], true)
+ 5 APPPATH\Controllers\Home.php(108): view('header', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 17:41:20 --> Error: Using $this when not in object context
+in APPPATH\Models\UserModel.php on line 13.
+ 1 APPPATH\Views\header.php(78): App\Models\UserModel::getUserById('3')
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\SRCTC\\app\\Views\\header.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('header', [], true)
+ 5 APPPATH\Controllers\Home.php(108): view('header', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 17:41:21 --> Error: Using $this when not in object context
+in APPPATH\Models\UserModel.php on line 13.
+ 1 APPPATH\Views\header.php(78): App\Models\UserModel::getUserById('3')
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\SRCTC\\app\\Views\\header.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('header', [], true)
+ 5 APPPATH\Controllers\Home.php(108): view('header', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 17:41:21 --> Error: Using $this when not in object context
+in APPPATH\Models\UserModel.php on line 13.
+ 1 APPPATH\Views\header.php(78): App\Models\UserModel::getUserById('3')
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\SRCTC\\app\\Views\\header.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('header', [], true)
+ 5 APPPATH\Controllers\Home.php(108): view('header', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 17:49:08 --> BadMethodCallException: Call to undefined method App\Models\UserModel::getUserById
+in SYSTEMPATH\Model.php on line 874.
+ 1 APPPATH\Controllers\Home.php(104): CodeIgniter\Model->__call('getUserById', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->dashboard()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 17:51:17 --> BadMethodCallException: Call to undefined method App\Models\UserModel::getUserById
+in SYSTEMPATH\Model.php on line 874.
+ 1 APPPATH\Controllers\Home.php(104): CodeIgniter\Model->__call('getUserById', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->dashboard()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 17:51:24 --> BadMethodCallException: Call to undefined method App\Models\UserModel::getUserById
+in SYSTEMPATH\Model.php on line 874.
+ 1 APPPATH\Controllers\Home.php(104): CodeIgniter\Model->__call('getUserById', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->dashboard()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 17:56:20 --> BadMethodCallException: Call to undefined method App\Models\UserModel::getUserById
+in SYSTEMPATH\Model.php on line 874.
+ 1 APPPATH\Controllers\Home.php(104): CodeIgniter\Model->__call('getUserById', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->dashboard()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 17:57:13 --> TypeError: Argument 2 passed to view() must be of the type array, null given, called in C:\laragon\www\SRCTC\app\Controllers\Home.php on line 106
+in SYSTEMPATH\Common.php on line 1166.
+ 1 APPPATH\Controllers\Home.php(106): view('dashboard', null)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->dashboard()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 17:57:41 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "dashboard.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('dashboard', [], true)
+ 3 APPPATH\Controllers\Home.php(106): view('dashboard')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->dashboard()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 18:06:58 --> Error: Class 'App\Controllers\UserModel' not found
+in APPPATH\Controllers\Home.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

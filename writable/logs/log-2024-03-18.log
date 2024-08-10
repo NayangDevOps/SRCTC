@@ -1,0 +1,7 @@
+CRITICAL - 2024-03-18 16:23:03 --> TypeError: Argument 2 passed to view() must be of the type array, null given, called in C:\laragon\www\SRCTC\app\Controllers\Home.php on line 157
+in SYSTEMPATH\Common.php on line 1166.
+ 1 APPPATH\Controllers\Home.php(157): view('users_list', null)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->user_list()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

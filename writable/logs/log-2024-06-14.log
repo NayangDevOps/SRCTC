@@ -1,0 +1,82 @@
+CRITICAL - 2024-06-14 16:58:28 --> Error: Call to undefined function getDepartureTime()
+in APPPATH\Views\Ticket\ticket_content.php on line 27.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Ticket/ticket_content', [], true)
+ 4 APPPATH\Controllers\TicketController.php(176): view('Ticket/ticket_content', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\TicketController->fetchContent('tab1')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TicketController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-14 17:01:07 --> ParseError: syntax error, unexpected '.'
+in APPPATH\Views\Ticket\ticket_content.php on line 27.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Ticket/ticket_content', [], true)
+ 3 APPPATH\Controllers\TicketController.php(176): view('Ticket/ticket_content', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\TicketController->fetchContent('tab1')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TicketController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-14 17:15:15 --> ErrorException: print_r() expects at least 1 parameter, 0 given
+in APPPATH\Views\Ticket\ticket_content.php on line 6.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r() expects at least 1 parameter, 0 given', 'C:\\laragon\\www\\SRCTC\\app\\Views\\Ticket\\ticket_content.php', 6, [...])
+ 2 APPPATH\Views\Ticket\ticket_content.php(6): print_r()
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\SRCTC\\app\\Views\\Ticket\\ticket_content.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Ticket/ticket_content', [], true)
+ 6 APPPATH\Controllers\TicketController.php(176): view('Ticket/ticket_content', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\TicketController->fetchContent('tab1')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TicketController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-14 17:16:22 --> ErrorException: print_r() expects at least 1 parameter, 0 given
+in APPPATH\Views\Ticket\ticket_content.php on line 6.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r() expects at least 1 parameter, 0 given', 'C:\\laragon\\www\\SRCTC\\app\\Views\\Ticket\\ticket_content.php', 6, [...])
+ 2 APPPATH\Views\Ticket\ticket_content.php(6): print_r()
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\SRCTC\\app\\Views\\Ticket\\ticket_content.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Ticket/ticket_content', [], true)
+ 6 APPPATH\Controllers\TicketController.php(176): view('Ticket/ticket_content', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\TicketController->fetchContent('tab1')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TicketController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-14 17:17:28 --> ErrorException: print_r() expects at least 1 parameter, 0 given
+in APPPATH\Views\Ticket\ticket_content.php on line 6.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r() expects at least 1 parameter, 0 given', 'C:\\laragon\\www\\SRCTC\\app\\Views\\Ticket\\ticket_content.php', 6, [...])
+ 2 APPPATH\Views\Ticket\ticket_content.php(6): print_r()
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\SRCTC\\app\\Views\\Ticket\\ticket_content.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Ticket/ticket_content', [], true)
+ 6 APPPATH\Controllers\TicketController.php(176): view('Ticket/ticket_content', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\TicketController->fetchContent('tab1')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TicketController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-14 18:37:37 --> ParseError: syntax error, unexpected '.'
+in APPPATH\Views\Ticket\ticket_content.php on line 40.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Ticket/ticket_content', [], true)
+ 3 APPPATH\Controllers\TicketController.php(176): view('Ticket/ticket_content', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\TicketController->fetchContent('tab1')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TicketController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-14 18:38:40 --> ParseError: syntax error, unexpected '.'
+in APPPATH\Views\Ticket\ticket_content.php on line 41.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Ticket/ticket_content', [], true)
+ 3 APPPATH\Controllers\TicketController.php(176): view('Ticket/ticket_content', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\TicketController->fetchContent('tab1')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TicketController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-14 18:39:56 --> ParseError: syntax error, unexpected '.'
+in APPPATH\Views\Ticket\ticket_content.php on line 41.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Ticket/ticket_content', [], true)
+ 3 APPPATH\Controllers\TicketController.php(176): view('Ticket/ticket_content', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\TicketController->fetchContent('tab1')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TicketController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
