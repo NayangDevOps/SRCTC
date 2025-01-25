@@ -25,7 +25,7 @@
     <link href="<?php echo base_url(); ?>public/lib/select2/css/select2.css" rel="stylesheet">
     <link href="<?php echo base_url(); ?>public/css/style.css" rel="stylesheet">
     <link href="<?php echo base_url(); ?>public/css/common.css" rel="stylesheet">
-    <script src="<?php echo base_url() ?>public/vendor/bootstrap/js/bootstrap.js"></script> 
+    <script src="<?php echo base_url() ?>public/lib/bootstrap/js/bootstrap.js"></script> 
     <script type="text/javascript" src="<?php echo base_url(); ?>public/js/jquery-2.1.4.min.js"></script> 
     <script src="<?php echo base_url(); ?>public/js/jquery.validate.js"></script>
 	  <script src="<?php echo base_url(); ?>public/js/jquery.validate.min.js"></script>
